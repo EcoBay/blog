@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+
+:root {
+  --bg-color: #f5e4bc;
+  --fg-color: #292823;
+  --accent-color: #f2dba6;
+  --accent-color-dark: #ecc979;
+  --normal-font: "Cormorant Garamond", serif;
+  --heading-font: "Bluu Next", serif;
+  --detail-font: "Bluu", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  color: var(--fg-color);
+}
+
+body {
+  line-height: 1.45;
+}
+
+@media screen and (min-width: 930px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+body {
+  margin: 0;
+  color: var(--fg-color);
 }
