@@ -23,7 +23,8 @@ header {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 930px) {
@@ -42,4 +43,65 @@ header {
   .container {
     max-width: 1300px;
   }
+}
+
+h2 {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-size: 30vw;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  line-height: 0.8;
+}
+
+@media screen and (min-width: 930px) {
+  h2 {
+    font-size: 15.25rem;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  h2 {
+    font-size: 18rem;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--normal-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 0;
+}
+
+p:not(:first-child) {
+  margin-top: 1rem;
+}
+
+strong {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+}
+
+strong span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  float: left;
+  padding: 0.4em 0.45em;
+  font-size: 3.25rem;
+  min-width: 5.5rem;
+  min-height: 6rem;
+  margin: 0 0.2em 0.075em 0;
+  border: 2px solid var(--fg-color);
+  line-height: 0.75;
 }

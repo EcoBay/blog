@@ -7,13 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Blogsite of Jerico Bayod" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link
-      rel="preload"
-      href="%PUBLIC_URL%/fonts/bluunext-titling.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin=""
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Jerico Bayod</title>
 
     <style>
@@ -34,7 +28,6 @@
       }
 
       #root:not(:empty) + #loader {
-        visibility: hidden !important;
         transform: translateY(-100%);
       }
 
@@ -46,7 +39,6 @@
         position: absolute;
         top: 0;
         right: 0;
-        visibility: visible;
 
         display: flex;
         position: fixed;
@@ -58,20 +50,20 @@
         justify-content: center;
         z-index: 20;
         transform: translateY(0);
-        transition: transform 0.3s ease-in 0.2s, visibility 0s linear 0.5s;
+        transition: transform 0.3s ease-in 0.2s;
       }
 
       #loader h1 {
         font-family: "Bluu Next", serif;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #f5e4bc;
         box-sizing: border-box;
         margin: 0;
       }
 
       #loader div {
-        width: 3.25rem;
-        height: 3.25rem;
+        width: 3.5rem;
+        height: 3.5rem;
         display: grid;
         position: relative;
         justify-content: center;
