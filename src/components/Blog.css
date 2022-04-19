@@ -1,0 +1,93 @@
+main {
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    padding-bottom: 10rem;
+  }
+}
+
+section.container {
+  margin-top: 6.5rem;
+}
+
+@media screen and (min-width: 1330px) {
+  section.container {
+    margin-top: 8.75rem;
+  }
+}
+
+.introduction {
+  padding: 0.75rem 1rem;
+  margin-top: 2rem;
+  max-width: 60ch;
+  width: 100%;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .introduction {
+    width: 66.67%;
+    margin-left: 8.33%;
+  }
+}
+
+.column {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.projects,
+.experiences {
+  padding: 1rem;
+  width: 100%;
+  max-width: 50ch;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .projects {
+    width: 33.33%;
+    margin-left: 8.33%;
+  }
+
+  .experiences {
+    width: 33.33%;
+    padding-top: 10rem;
+  }
+}
+
+.project {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 0;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.project .content {
+  width: calc(100% - 90px - 1rem);
+}
+
+.project svg {
+  height: 90px;
+  width: 90px;
+  margin-right: 1rem;
+}
+
+.project a {
+  color: var(--fg-color);
+  text-underline-offset: 0.05rem;
+  text-decoration-thickness: 0.05rem;
+  text-decoration-color: var(--fg-color);
+}
+
+.project p {
+  margin-top: 0.5rem;
+}

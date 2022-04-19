@@ -1,0 +1,49 @@
+footer {
+  background-color: var(--bg-color);
+  padding: 3rem 1rem 6rem;
+  border-top: 4px double var(--fg-color);
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    padding: 4rem 1rem 8rem;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer h1 {
+  font-size: 1.65rem;
+  font-family: var(--heading-font);
+  position: relative;
+  margin: 0;
+}
+
+footer .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer h1 span:first-child {
+  position: relative;
+  align-items: center;
+  top: -0.1em;
+}
+
+footer ul {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li svg {
+  height: 1.25rem !important;
+}

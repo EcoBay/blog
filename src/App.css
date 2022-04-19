@@ -74,6 +74,14 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
 p {
   font-family: var(--normal-font);
   font-size: 1rem;
@@ -104,4 +112,27 @@ strong span {
   margin: 0 0.2em 0.075em 0;
   border: 2px solid var(--fg-color);
   line-height: 0.75;
+}
+
+.contact {
+  position: relative;
+  padding: 6rem 0 3rem;
+}
+
+@media screen and (min-width: 769px) {
+  .contact {
+    padding: 12rem 0 7rem;
+  }
+}
+
+.paper-tear {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 10rem;
+  pointer-events: none;
+  filter: drop-shadow(rgba(21, 20, 15, 0.2) 0.06em 0.06em 0.06em);
 }

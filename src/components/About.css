@@ -1,0 +1,51 @@
+.profile {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  order: 2;
+}
+
+.profileBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--fg-color);
+  padding: 1rem 1.5rem;
+}
+
+.profileBorder:hover {
+  border-color: var(--accent-color);
+  background-color: #f4e0b2;
+}
+
+.profile svg {
+  height: 340px;
+  transform: scale(0.97);
+  transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.profileBorder:hover svg {
+  transform: scale(1);
+}
+
+.description {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 60ch;
+  font-size: 1rem;
+  order: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 769px) {
+  .profile {
+    width: 41.67%;
+    order: 1;
+  }
+
+  .description {
+    width: 58.33%;
+    order: 2;
+  }
+}
